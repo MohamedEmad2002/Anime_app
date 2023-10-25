@@ -30,4 +30,11 @@ class TextApp{
   static const String didntYoureceiveanycode = "Didn’t you receive any code?";
   static const String resend = "Resend Code";
   static const String confirm = "Confirm";
+  //resetPassword screen Strings
+  static const String resetpassword = "Reset Password";
+  static const String nowyoucanresetyouroldPassword = "Now you can reset your old password";
+  //reset screen
+  static const String reset = "Reset";
+  static const String congratulation = "Congratulation";
+  static const String yourAccountisreadytouseyouwillbedirectedtothehomepageinafewseconds="Your account is ready to use , you will \n be directed to the home page in a  \n few seconds";
 }

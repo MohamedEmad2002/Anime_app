@@ -1,6 +1,7 @@
 import 'package:anime/app/color_app.dart';
 import 'package:anime/app/image_app.dart';
 import 'package:anime/app/text_app.dart';
+import 'package:anime/presentation/screens/auth/reset_screen.dart';
 import 'package:anime/presentation/widgets/custom_Row.dart';
 import 'package:anime/presentation/widgets/otp_widgets.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class OtpScreen extends StatelessWidget {
         backgroundColor: ColorsApp.primaryColor,
         elevation: 0.0,
       ),
-      body:  Padding(
+      body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: SafeArea(
             child: Center(
@@ -39,64 +40,78 @@ class OtpScreen extends StatelessWidget {
                     fontFamily: "Inter",
                     fontWeight: FontWeight.w600),
               ),
-              const SizedBox(height: 40,),
+              const SizedBox(
+                height: 40,
+              ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Otp(),
-              Otp(),
-              Otp(),
-              Otp(),
-              Otp(),
+                  Otp(),
+                  Otp(),
+                  Otp(),
+                  Otp(),
                 ],
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(
+                height: 10,
+              ),
               const Padding(
                 padding: EdgeInsets.only(left: 15),
                 child: CustomRow(
-                    screen:  OtpScreen(),
-                    textOne: TextApp.didntYoureceiveanycode,
-                    textTwo: TextApp.resend,
-                  ),
+                  screen: OtpScreen(),
+                  textOne: TextApp.didntYoureceiveanycode,
+                  textTwo: TextApp.resend,
+                ),
               ),
-              const SizedBox(height: 30,),
+              const SizedBox(
+                height: 30,
+              ),
               SizedBox(
-                  width: double.infinity,
-                  height: 50,
-                  child: MaterialButton(
-                    onPressed: () {},
-                    color: ColorsApp.secondaryColor,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(70)),
-                    child: const Text(
-                      TextApp.confirm,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: "Inter",
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600),
-                    ),
+                width: double.infinity,
+                height: 50,
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ResetScreen(),
+                        ));
+                  },
+                  color: ColorsApp.secondaryColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(70)),
+                  child: const Text(
+                    TextApp.confirm,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: "Inter",
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600),
                   ),
                 ),
-                const SizedBox(height: 10,),
-                SizedBox(
-                  width: double.infinity,
-                  height: 50,
-                  child: MaterialButton(
-                    onPressed: () {},
-                    color: ColorsApp.fourthColor,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(70)),
-                    child: const Text(
-                      TextApp.cancel,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: "Inter",
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600),
-                    ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: MaterialButton(
+                  onPressed: () {},
+                  color: ColorsApp.fourthColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(70)),
+                  child: const Text(
+                    TextApp.cancel,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: "Inter",
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600),
                   ),
                 ),
+              ),
             ],
           ),
         )),

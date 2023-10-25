@@ -4,4 +4,5 @@ class IconsApp{
   static const String google = 'assets/images/icons/Google.png';
   static const String apple = 'assets/images/icons/Apple Logo.png';
   static const String back = 'assets/images/icons/Vector.png';
+  static const String congratulation = "assets/images/icons/congratulation.png";
 }

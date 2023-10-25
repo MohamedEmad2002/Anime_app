@@ -1,4 +1,5 @@
 import 'package:anime/presentation/screens/auth/login_screen.dart';
+import 'package:anime/presentation/screens/auth/reset_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home:  const LoginScreen(),
+      home:   const LoginScreen(),
     );
   }
 }

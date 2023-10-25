@@ -5,4 +5,5 @@ class ImageApp{
   static const String auth = "assets/images/Mask group.png";
   static const String forgot = "assets/images/Group 121.png";
   static const String otp ="assets/images/otp-removebg-preview.png";
+  static const String reset = "assets/images/reset.png";
 }
