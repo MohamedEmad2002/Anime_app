@@ -1,3 +1,5 @@
+import 'package:anime/presentation/screens/auth/login_screen.dart';
+import 'package:anime/presentation/screens/auth/sign_up.dart';
 import 'package:anime/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(),
-      home: const SplashScreen(),
+      home: const LoginScreen(),
     );
   }
 }

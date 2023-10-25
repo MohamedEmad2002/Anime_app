@@ -1,6 +1,7 @@
 import 'package:anime/app/color_app.dart';
 import 'package:anime/app/image_app.dart';
 import 'package:anime/app/text_app.dart';
+import 'package:anime/presentation/screens/auth/sign_up.dart';
 import 'package:anime/presentation/screens/auth/tff.dart';
 import 'package:anime/presentation/widgets/check_row.dart';
 import 'package:anime/presentation/widgets/custom_Row.dart';
@@ -33,14 +34,14 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 Image.asset(ImageApp.auth),
                 const SizedBox(
-                  height: 30,
+                  height: 7,
                 ),
                 const Text(
                   TextApp.welcomeback,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w600,
                       fontFamily: "Inter"),
                 ),
                 const SizedBox(
@@ -73,7 +74,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 const CustomRow(
                   textOne: TextApp.newtoAnimax,
                   textTwo: TextApp.signup,
+                  screen: SignUpScreen(),
                 ),
+                const SizedBox(height: 10,),
                 const CustomDivider(text: TextApp.orwith),
                 const SizedBox(height: 20,),
                 const IconRow()

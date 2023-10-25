@@ -1,3 +1,4 @@
+import 'package:anime/app/color_app.dart';
 import 'package:flutter/material.dart';
 
 class CustomDivider extends StatelessWidget {
@@ -8,11 +9,11 @@ class CustomDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const SizedBox(
+        SizedBox(
           width: 136,
           child: Divider(
             height: 25,
-            color: Colors.white,
+            color: ColorsApp.thirdColor,
           ),
         ),
         const SizedBox(
@@ -26,11 +27,11 @@ class CustomDivider extends StatelessWidget {
         const SizedBox(
           width: 10,
         ),
-        const SizedBox(
+        SizedBox(
           width: 136,
           child: Divider(
             height: 25,
-            color: Colors.white,
+            color: ColorsApp.thirdColor,
           ),
         ),
       ],
