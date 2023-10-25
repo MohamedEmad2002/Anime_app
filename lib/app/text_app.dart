@@ -24,4 +24,10 @@ class TextApp{
   static const String sendverfication = "Send Verification";
   static const String cancel = "Cancel";
   static const String donotworry ="Don’t worry it’s happened . Please enter your email \n or phone number associated with your account .";
+  //otp screen Strings
+  static const String verificationCode = "Verification code";
+  static const String entercode = "Enter the code we sent you !  ";
+  static const String didntYoureceiveanycode = "Didn’t you receive any code?";
+  static const String resend = "Resend Code";
+  static const String confirm = "Confirm";
 }

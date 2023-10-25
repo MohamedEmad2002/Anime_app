@@ -3,4 +3,5 @@ class IconsApp{
   static const String facebook = 'assets/images/icons/Facebook.png';
   static const String google = 'assets/images/icons/Google.png';
   static const String apple = 'assets/images/icons/Apple Logo.png';
+  static const String back = 'assets/images/icons/Vector.png';
 }

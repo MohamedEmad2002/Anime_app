@@ -2,7 +2,7 @@ import 'package:anime/app/color_app.dart';
 import 'package:anime/app/image_app.dart';
 import 'package:anime/app/text_app.dart';
 import 'package:anime/presentation/screens/auth/sign_up.dart';
-import 'package:anime/presentation/screens/auth/tff.dart';
+import 'package:anime/presentation/widgets/tff.dart';
 import 'package:anime/presentation/widgets/check_row.dart';
 import 'package:anime/presentation/widgets/custom_Row.dart';
 import 'package:anime/presentation/widgets/custom_button.dart';
@@ -64,6 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   controller: passwordControl,
                   kbType: TextInputType.visiblePassword,
                 ),
+                const SizedBox(height: 10,),
                 const Checkrow(),
                 const SizedBox(
                   height: 10,

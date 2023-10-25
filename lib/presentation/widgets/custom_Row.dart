@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 class CustomRow extends StatelessWidget {
   final String textOne;
   final String textTwo;
-  final Widget screen;
+  final Widget? screen;
 
   const CustomRow(
       {super.key,
       required this.textOne,
       required this.textTwo,
-      required this.screen});
+       this.screen});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class CustomRow extends StatelessWidget {
           GestureDetector(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return screen;
+                return screen!;
               }));
             },
             child: Text(

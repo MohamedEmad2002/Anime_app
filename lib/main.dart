@@ -1,6 +1,4 @@
 import 'package:anime/presentation/screens/auth/login_screen.dart';
-import 'package:anime/presentation/screens/auth/sign_up.dart';
-import 'package:anime/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,8 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: const LoginScreen(),
+      home:  const LoginScreen(),
     );
   }
 }

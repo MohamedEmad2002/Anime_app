@@ -1,5 +1,6 @@
 import 'package:anime/app/color_app.dart';
 import 'package:anime/app/text_app.dart';
+import 'package:anime/presentation/screens/auth/forgot_screen.dart';
 import 'package:flutter/material.dart';
 
 class Checkrow extends StatefulWidget {
@@ -38,8 +39,13 @@ class _CheckrowState extends State<Checkrow> {
           style: TextStyle(color: Colors.grey, fontFamily: "Inter"),
         ),
         const Spacer(),
-        TextButton(
-          onPressed: () {},
+        GestureDetector(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return ForgotScreen();
+            }));
+          },
+          
           child: Text(TextApp.forgotpassword,
               style: TextStyle(
                   color: ColorsApp.secondaryColor, fontFamily: "Inter")),
