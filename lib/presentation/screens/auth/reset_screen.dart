@@ -2,11 +2,12 @@ import 'package:anime/app/color_app.dart';
 import 'package:anime/app/icons_app.dart';
 import 'package:anime/app/image_app.dart';
 import 'package:anime/app/text_app.dart';
-import 'package:anime/presentation/widgets/indicator.dart';
+
 import 'package:anime/presentation/widgets/tff.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
+// ignore: must_be_immutable
 class ResetScreen extends StatelessWidget {
   ResetScreen({super.key});
 

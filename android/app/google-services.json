@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1000377367461",
+    "project_id": "animx-app",
+    "storage_bucket": "animx-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000377367461:android:6bb5a23be3b7f81c8f464c",
+        "android_client_info": {
+          "package_name": "com.example.anime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA06aGYqbq9YFGLaScHuq0NnP58mWyCr6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

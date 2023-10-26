@@ -3,7 +3,7 @@ import 'package:anime/app/image_app.dart';
 import 'package:anime/app/text_app.dart';
 import 'package:anime/presentation/screens/auth/login_screen.dart';
 import 'package:anime/presentation/widgets/tff.dart';
-import 'package:anime/presentation/widgets/custom_Row.dart';
+import 'package:anime/presentation/widgets/custom_row.dart';
 import 'package:anime/presentation/widgets/custom_divider.dart';
 import 'package:anime/presentation/widgets/icon_row.dart';
 import 'package:flutter/material.dart';
