@@ -10,7 +10,7 @@ class CustomDivider extends StatelessWidget {
     return Row(
       children: [
         SizedBox(
-          width: 136,
+          width: 125,
           child: Divider(
             height: 25,
             color: ColorsApp.thirdColor,
@@ -28,7 +28,7 @@ class CustomDivider extends StatelessWidget {
           width: 10,
         ),
         SizedBox(
-          width: 136,
+          width: 125,
           child: Divider(
             height: 25,
             color: ColorsApp.thirdColor,

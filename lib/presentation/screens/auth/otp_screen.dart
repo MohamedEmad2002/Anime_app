@@ -2,7 +2,7 @@ import 'package:anime/app/color_app.dart';
 import 'package:anime/app/image_app.dart';
 import 'package:anime/app/text_app.dart';
 import 'package:anime/presentation/screens/auth/reset_screen.dart';
-import 'package:anime/presentation/widgets/custom_Row.dart';
+import 'package:anime/presentation/widgets/custom_row.dart';
 import 'package:anime/presentation/widgets/otp_widgets.dart';
 import 'package:flutter/material.dart';
 
