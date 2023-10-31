@@ -5,8 +5,12 @@ class DioHelper {
 
   static init() {
     dio = Dio(BaseOptions(
-      baseUrl: 'https://student.valuxapps.com/api/',
+      baseUrl: 'https://815b-197-43-149-41.ngrok-free.app/',
       receiveDataWhenStatusError: true,
+      followRedirects: false,
+      validateStatus: (status) {
+        return status! < 500;
+      },
     ));
   }
 
@@ -15,7 +19,7 @@ class DioHelper {
       Map<String, dynamic>? query,
       String? token}) async {
     dio.options.headers = {
-      'Content-Type': 'application/json',
+      'Accept': 'application/json',
       'Authorization': token ?? ''
     };
     return await dio.get(
@@ -31,7 +35,6 @@ class DioHelper {
       String? token}) async {
     dio.options.headers = {
       'Content-Type': 'application/json',
-      'Authorization': token ?? ''
     };
     return dio.post(url, queryParameters: query, data: data);
   }
@@ -47,4 +50,27 @@ class DioHelper {
     };
     return dio.put(url, queryParameters: query, data: data);
   }
+
+   void makeRequest() async {
+
+  try {
+    Response response = await dio.post('https://815b-197-43-149-41.ngrok-free.app/', data: {
+
+    });
+
+    if (response.statusCode == 302) {
+      if (response.headers.value('location') != null) {
+        String? newUrl = response.headers.value('location');
+        Response newResponse = await dio.get("$newUrl");
+        // Handle the new response as needed.
+      }
+    } else if (response.statusCode == 200) {
+      // Handle the success response.
+    } else {
+      // Handle other error cases.
+    }
+  } catch (e) {
+    // Handle Dio exceptions, such as network errors.
+  }
+}
 }
