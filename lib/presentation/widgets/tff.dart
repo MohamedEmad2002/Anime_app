@@ -6,12 +6,21 @@ class CustomTFF extends StatelessWidget {
   final TextInputType kbType;
   final TextEditingController controller;
   final Icon? suffixIcon;
+  final Function? onSubmit;
+  final Function? onChange;
+  final Function? onTap;
+  final bool isPassword = false;
+  final dynamic validate;
   const CustomTFF({
     Key? key,
     this.suffixIcon,
     required this.hintText,
     required this.kbType,
     required this.controller,
+    this.onSubmit,
+    this.onChange,
+    this.onTap,
+    this.validate,
   }) : super(key: key);
 
   @override

@@ -9,10 +9,14 @@ import 'package:anime/presentation/widgets/check_row.dart';
 import 'package:anime/presentation/widgets/custom_row.dart';
 import 'package:anime/presentation/widgets/custom_button.dart';
 import 'package:anime/presentation/widgets/custom_divider.dart';
+<<<<<<< HEAD
 import 'package:anime/presentation/widgets/icon_row.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+=======
+import 'package:flutter/material.dart';
+>>>>>>> google_auth
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -24,6 +28,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   bool value = false;
 
+<<<<<<< HEAD
   Future signInWithGoogle() async {
     // Trigger the authentication flow
     final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
@@ -47,6 +52,8 @@ class _LoginScreenState extends State<LoginScreen> {
               builder: (context) => const HomeScreen(),
             )));
   }
+=======
+>>>>>>> google_auth
 
   @override
   Widget build(BuildContext context) {
@@ -104,10 +111,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(
                     height: 10,
                   ),
+<<<<<<< HEAD
                   const CustomRow(
                     textOne: TextApp.newtoAnimax,
                     textTwo: TextApp.signup,
                     screen: SignUpScreen(),
+=======
+                   CustomRow(
+                    textOne: TextApp.newtoAnimax,
+                    textTwo: TextApp.signup,
+                    screen: SignupScreen(),
+>>>>>>> google_auth
                   ),
                   const SizedBox(
                     height: 10,
@@ -126,7 +140,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           icon: Image.asset(IconsApp.facebook)),
                       IconButton(
                           onPressed: () {
+<<<<<<< HEAD
                             signInWithGoogle();
+=======
+>>>>>>> google_auth
                           }, icon: Image.asset(IconsApp.google)),
                       IconButton(
                           onPressed: () {}, icon: Image.asset(IconsApp.apple)),
