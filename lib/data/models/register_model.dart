@@ -31,18 +31,18 @@ class User {
   User({
     required this.name,
     required this.email,
-    required this.phoneNumber,
+    required this.phone_number,
     required this.avatar,
   });
   late final String name;
   late final String email;
-  late final String phoneNumber;
+  late final String phone_number;
   late final String avatar;
   
   User.fromJson(Map<String, dynamic> json){
     name = json['name'];
     email = json['email'];
-    phoneNumber = json['phone_number'];
+    phone_number = json['phone_number'];
     avatar = json['avatar'];
   }
 
@@ -50,7 +50,7 @@ class User {
     final _data = <String, dynamic>{};
     _data['name'] = name;
     _data['email'] = email;
-    _data['phone_number'] = phoneNumber;
+    _data['phone_number'] = phone_number;
     _data['avatar'] = avatar;
     return _data;
   }

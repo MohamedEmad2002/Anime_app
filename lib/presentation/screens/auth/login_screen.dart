@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   CustomTFF(
                     hintText: 'E-mail',
                     controller: emailControl,
-                    kbType: TextInputType.emailAddress,
+                    kbType: TextInputType.emailAddress, onChanged: (value) {  }, validator: (value) {  },
                   ),
                   const SizedBox(
                     height: 20,
@@ -91,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     hintText: 'Password',
                     controller: passwordControl,
-                    kbType: TextInputType.visiblePassword,
+                    kbType: TextInputType.visiblePassword, onChanged: (value) {  }, validator: (value) {  },
                   ),
                   const SizedBox(
                     height: 10,

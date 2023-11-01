@@ -1,12 +1,12 @@
 import 'package:anime/bussiness_logic/cubits/bloc_observer/bloc_observer.dart';
 import 'package:anime/bussiness_logic/cubits/register/cubit/register_cubit.dart';
-import 'package:anime/data/models/register_model.dart';
-import 'package:anime/data/services/dio_helper.dart';
 import 'package:anime/presentation/screens/auth/login_screen.dart';
 import 'package:bloc/bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'data/dio/dio_helper.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

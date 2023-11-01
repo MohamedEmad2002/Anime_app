@@ -53,7 +53,7 @@ class ResetScreen extends StatelessWidget {
                     ),
                     hintText: "new password",
                     kbType: TextInputType.visiblePassword,
-                    controller: passwordController),
+                    controller: passwordController, onChanged: (value) {  }, validator: (value) {  },),
                 const SizedBox(
                   height: 15,
                 ),
@@ -64,7 +64,7 @@ class ResetScreen extends StatelessWidget {
                     ),
                     hintText: "confirm password",
                     kbType: TextInputType.visiblePassword,
-                    controller: confirmpasswordController),
+                    controller: confirmpasswordController, onChanged: (value) {  }, validator: (value) {  },),
                 const SizedBox(
                   height: 30,
                 ),

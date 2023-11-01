@@ -53,7 +53,7 @@ class ForgotScreen extends StatelessWidget {
                 CustomTFF(
                     hintText: "Enter your Email",
                     kbType: TextInputType.emailAddress,
-                    controller: emailController),
+                    controller: emailController, onChanged: (value) {  }, validator: (value) {  },),
                 const SizedBox(
                   height: 30,
                 ),

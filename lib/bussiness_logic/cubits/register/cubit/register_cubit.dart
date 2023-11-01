@@ -1,12 +1,13 @@
 import 'dart:convert';
 
 import 'package:anime/constant/constant.dart';
-import 'package:anime/data/services/dio_helper.dart';
 import 'package:anime/data/models/register_model.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
+
+import '../../../../data/dio/dio_helper.dart';
 
 part 'register_state.dart';
 
@@ -32,7 +33,7 @@ class RegisterCubit extends Cubit<RegisterState> {
       "phone_number":phone_number,
       
     }).then((value) {
-      regiserModel=RegisterModel.fromJson(jsonDecode(value.data));
+      regiserModel=RegisterModel.fromJson(value.data);
       if (kDebugMode) {
         print("=====");
       }

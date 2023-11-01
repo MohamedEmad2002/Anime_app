@@ -20,7 +20,7 @@ class CustomTFF extends StatelessWidget {
     this.onSubmit,
     this.onChange,
     this.onTap,
-    this.validate,
+    this.validate, required Null Function(dynamic value) onChanged, required String? Function(dynamic value) validator,
   }) : super(key: key);
 
   @override
